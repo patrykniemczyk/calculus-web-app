@@ -1,7 +1,8 @@
 import MarkdownRenderer from '../components/MarkdownRenderer';
 
 const Granice = () => {
-  return <MarkdownRenderer filePath="/content/granice.md" />;
+  return <MarkdownRenderer filePath={`${import.meta.env.BASE_URL}content/granice.md`}
+  />;
 };
 
 export default Granice;

@@ -26,7 +26,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/calculus-web-app/">
       <div className='w'>
         <Header />
         <main className='page-content' aria-label='Content'>
