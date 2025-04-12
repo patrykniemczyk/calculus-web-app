@@ -4,10 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import './App.css';
-import Granice from './pages/Granice';
-import Pochodne from './pages/Pochodne';
-import Calki from './pages/Calki';
-import Glowna from './pages/Glowna';
+import MarkdownRenderer from './components/MarkdownRenderer';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -26,15 +23,13 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router basename="/calculus-web-app/">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className='w'>
         <Header />
         <main className='page-content' aria-label='Content'>
           <Routes>
-            <Route path="/" element={<Glowna />} />
-            <Route path="/granice" element={<Granice />} />
-            <Route path="/pochodne" element={<Pochodne />} />
-            <Route path="/calki" element={<Calki />} />
+            <Route path="/" element={<MarkdownRenderer defaultPage="glowna" />} />
+            <Route path="/:page" element={<MarkdownRenderer />} />
           </Routes>
         </main>
         <Navigation />
