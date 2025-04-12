@@ -35,6 +35,9 @@ const MarkdownRenderer = ({ defaultPage }: MarkdownRendererProps) => {
       .then((text) => {
         setContent(text);
         setError('');
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       })
       .catch(() => {
         setContent('');

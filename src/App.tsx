@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-import './App.css';
 import MarkdownRenderer from './components/MarkdownRenderer';
+import './App.css';
 
 const App: React.FC = () => {
   useEffect(() => {
