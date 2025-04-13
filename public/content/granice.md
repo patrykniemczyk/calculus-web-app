@@ -48,11 +48,9 @@ Obie definicje są równoważne w przestrzeniach metrycznych.
 
 ## Własności granic funkcji
 
-1. **Jednoznaczność granicy**: Jeśli granica funkcji istnieje, to jest ona jednoznacznie określona.
-
-2. **Lokalność**: Granica funkcji $f(x)$ przy $x$ dążącym do $a$ zależy jedynie od wartości funkcji $f$ w pewnym otoczeniu punktu $a$, ale nie od wartości $f(a)$.
-
-3. **Zbieżność do granicy**: Jeśli $\lim_{x \to a} f(x) = L$, to wartości funkcji $f(x)$ mogą być dowolnie bliskie $L$ pod warunkiem, że $x$ jest dostatecznie bliskie $a$.
+- **Jednoznaczność granicy**: Jeśli granica funkcji istnieje, to jest ona jednoznacznie określona.
+- **Lokalność**: Granica funkcji $f(x)$ przy $x$ dążącym do $a$ zależy jedynie od wartości funkcji $f$ w pewnym otoczeniu punktu $a$, ale nie od wartości $f(a)$.
+- **Zbieżność do granicy**: Jeśli $\lim_{x \to a} f(x) = L$, to wartości funkcji $f(x)$ mogą być dowolnie bliskie $L$ pod warunkiem, że $x$ jest dostatecznie bliskie $a$.
 
 ## Twierdzenia o granicach funkcji
 
@@ -106,13 +104,9 @@ $$
 ### Strategie obliczania granic
 
 1. **Podstawienie bezpośrednie**: Jeśli funkcja jest ciągła w punkcie $a$, to $\lim_{x \to a} f(x) = f(a)$.
-
 2. **Przekształcanie wyrażeń**: Uprość wyrażenie algebraicznie przed obliczeniem granicy.
-
 3. **Korzystanie z twierdzeń o granicach**: Zastosuj poznane wcześniej twierdzenia.
-
 4. **Reguła de l'Hospitala**: Dla granic postaci $\frac{0}{0}$ lub $\frac{\infty}{\infty}$.
-
 5. **Rozwinięcie w szereg**: Dla skomplikowanych funkcji, czasem pomocne jest rozwinięcie w szereg Taylora.
 
 ### Przykłady obliczania granic
@@ -328,13 +322,9 @@ $$
 ### Własności funkcji ciągłych
 
 1. **Suma, różnica, iloczyn i iloraz** funkcji ciągłych są funkcjami ciągłymi (iloraz pod warunkiem, że mianownik nie jest zerem).
-
 2. **Złożenie funkcji ciągłych** jest funkcją ciągłą.
-
 3. **Twierdzenie Weierstrassa**: Funkcja ciągła na domkniętym i ograniczonym przedziale $[a, b]$ osiąga swoją wartość największą i najmniejszą.
-
 4. **Twierdzenie Darboux**: Funkcja ciągła na przedziale $[a, b]$ przyjmuje każdą wartość między $f(a)$ a $f(b)$.
-
 5. **Twierdzenie o wartości pośredniej**: Jeśli funkcja $f$ jest ciągła na przedziale $[a, b]$ i $f(a) \cdot f(b) < 0$, to istnieje taki punkt $c \in (a, b)$, że:
 
 $$
@@ -346,13 +336,10 @@ $$
 ### Zastosowania w analizie matematycznej
 
 1. **Definicja pochodnej**: Pochodna funkcji $f$ w punkcie $a$ jest zdefiniowana jako:
-
 $$
 f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 $$
-
 2. **Badanie ciągłości funkcji**: Granice są kluczowe do określania ciągłości funkcji.
-
 3. **Asymptoty funkcji**: Granice pomagają w znajdowaniu asymptot funkcji.
 
 ### Zastosowania w fizyce
@@ -536,7 +523,10 @@ $$
 Znowu mamy postać nieoznaczoną $\frac{0}{0}$. Stosujemy regułę de l'Hospitala ponownie:
 
 $$
-\lim_{x \to 0} \frac{1 - \cos x}{\sin x + x \cos x} = \lim_{x \to 0} \frac{\sin x}{\cos x + \cos x - x \sin x} = \lim_{x \to 0} \frac{\sin x}{2\cos x - x \sin x} = \frac{\sin 0}{2\cos 0 - 0 \cdot \sin 0} = \frac{0}{2 \cdot 1 - 0} = 0
+\lim_{x \to 0} \frac{1 - \cos x}{\sin x + x \cos x} = \lim_{x \to 0} \frac{\sin x}{\cos x + \cos x - x \sin x} 
+$$
+$$
+= \lim_{x \to 0} \frac{\sin x}{2\cos x - x \sin x} = \frac{\sin 0}{2\cos 0 - 0 \cdot \sin 0} = \frac{0}{2 \cdot 1 - 0} = 0
 $$
 
 ### Zadanie 10

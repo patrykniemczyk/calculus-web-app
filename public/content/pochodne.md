@@ -579,13 +579,9 @@ $$
 ### Rozwinięcia Maclaurina ważnych funkcji
 
 1. $e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \ldots + \frac{x^n}{n!} + \ldots$
-
 2. $\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \ldots + (-1)^n\frac{x^{2n+1}}{(2n+1)!} + \ldots$
-
 3. $\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \ldots + (-1)^n\frac{x^{2n}}{(2n)!} + \ldots$
-
 4. $\ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \ldots + (-1)^{n-1}\frac{x^n}{n} + \ldots$ dla $|x| < 1$
-
 5. $(1+x)^{\alpha} = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2 + \frac{\alpha(\alpha-1)(\alpha-2)}{3!}x^3 + \ldots$ dla $|x| < 1$
 
 ### Zastosowania szeregów Taylora
