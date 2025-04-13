@@ -1,16 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
-import rehypeSlug from 'rehype-slug';
-import 'katex/dist/katex.min.css';
 
-interface MarkdownRendererProps {
-  defaultPage?: string;
-}
-
-const MarkdownRenderer = ({ defaultPage }: MarkdownRendererProps) => {
+const HtmlRenderer = ({ defaultPage }: { defaultPage?: string }) => {
   const { page } = useParams();
   const [content, setContent] = useState('');
   const [error, setError] = useState('');
@@ -23,14 +14,12 @@ const MarkdownRenderer = ({ defaultPage }: MarkdownRendererProps) => {
       return;
     }
 
-    const filePath = `${import.meta.env.BASE_URL}content/${fileName}.md`;
+    const filePath = `${import.meta.env.BASE_URL}html/${fileName}.html`;
 
     fetch(filePath)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Nie znaleziono pliku Markdown.');
-        }
-        return response.text();
+      .then((res) => {
+        if (!res.ok) throw new Error();
+        return res.text();
       })
       .then((text) => {
         setContent(text);
@@ -40,21 +29,15 @@ const MarkdownRenderer = ({ defaultPage }: MarkdownRendererProps) => {
         });
       })
       .catch(() => {
+        setError(`Nie udało się załadować pliku: ${fileName}.html`);
         setContent('');
-        setError(`Nie udało się załadować pliku: ${fileName}.md`);
       });
   }, [fileName]);
 
   if (error) return <p>{error}</p>;
   if (!content) return <p>Ładowanie...</p>;
 
-  return (
-    <ReactMarkdown
-      children={content}
-      remarkPlugins={[remarkMath]}
-      rehypePlugins={[rehypeKatex, rehypeSlug]}
-    />
-  );
+  return <div dangerouslySetInnerHTML={{ __html: content }} />;
 };
 
-export default MarkdownRenderer;
+export default HtmlRenderer;

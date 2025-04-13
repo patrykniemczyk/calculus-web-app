@@ -29,11 +29,15 @@ Intuicyjnie, pochodna funkcji $f$ w punkcie $x$ opisuje szybkość zmiany warto�
 
 Pochodną funkcji $f$ w punkcie $x_0$ nazywamy granicę ilorazu różnicowego, gdy przyrost argumentu dąży do zera:
 
-$$f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}$$
+$$
+f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+$$
 
 Równoważnie, pochodną można zdefiniować jako:
 
-$$f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$$
+$$
+f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}
+$$
 
 ### Interpretacja ilorazu różnicowego
 
@@ -54,22 +58,32 @@ Geometrycznie, pochodna funkcji $f$ w punkcie $x_0$ reprezentuje współczynnik 
 
 Równanie stycznej do wykresu funkcji $f$ w punkcie $(x_0, f(x_0))$ ma postać:
 
-$$y - f(x_0) = f'(x_0)(x - x_0)$$
+$$
+y - f(x_0) = f'(x_0)(x - x_0)
+$$
 
 lub równoważnie:
 
-$$y = f(x_0) + f'(x_0)(x - x_0)$$
+$$
+y = f(x_0) + f'(x_0)(x - x_0)
+$$
 
 ### Przykład interpretacji geometrycznej
 
 Dla funkcji $f(x) = x^2$ w punkcie $x_0 = 2$:
 
-$$f'(2) = 2 \cdot 2 = 4$$
+$$
+f'(2) = 2 \cdot 2 = 4
+$$
 
 Równanie stycznej w punkcie $(2, 4)$ wynosi:
 
-$$y - 4 = 4(x - 2)$$
-$$y = 4x - 4$$
+$$
+y - 4 = 4(x - 2)
+$$
+$$
+y = 4x - 4
+$$
 
 ## Interpretacja fizyczna
 
@@ -91,128 +105,152 @@ Jeśli $s(t)$ opisuje położenie ciała w chwili $t$, to:
 ### Podstawowe reguły różniczkowania
 
 1. Pochodna funkcji stałej:
-   $$\frac{d}{dx}(c) = 0$$
+$$
+\frac{d}{dx}(c) = 0
+$$
 
 2. Pochodna funkcji identycznościowej:
-   $$\frac{d}{dx}(x) = 1$$
+$$
+\frac{d}{dx}(x) = 1
+$$
 
 3. Pochodna sumy funkcji:
-   $$\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$$
+$$
+\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)
+$$
 
 4. Pochodna różnicy funkcji:
-   $$\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$$
+$$
+\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)
+$$
 
 5. Pochodna iloczynu funkcji (reguła Leibniza):
-   $$\frac{d}{dx}[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x)$$
+$$
+\frac{d}{dx}[f(x) \cdot g(x)] = f'(x) \cdot g(x) + f(x) \cdot g'(x)
+$$
 
 6. Pochodna ilorazu funkcji:
-   $$\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}$$
+$$
+\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}
+$$
 
 7. Pochodna funkcji złożonej (reguła łańcuchowa):
-   $$\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$
+$$
+\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)
+$$
 
 8. Pochodna funkcji odwrotnej:
-   $$[f^{-1}]'(y) = \frac{1}{f'(x)}$$
-   gdzie $y = f(x)$ i $x = f^{-1}(y)$
+$$
+[f^{-1}]'(y) = \frac{1}{f'(x)}
+$$
+gdzie $y = f(x)$ i $x = f^{-1}(y)$
 
 ### Przykłady zastosowania reguł różniczkowania
 
 #### Przykład 1: Pochodna sumy
 Obliczmy pochodną funkcji $h(x) = x^3 + 2x^2 - 5x + 1$:
 
-$$h'(x) = \frac{d}{dx}(x^3) + \frac{d}{dx}(2x^2) - \frac{d}{dx}(5x) + \frac{d}{dx}(1)$$
-$$h'(x) = 3x^2 + 4x - 5 + 0 = 3x^2 + 4x - 5$$
+$$
+h'(x) = \frac{d}{dx}(x^3) + \frac{d}{dx}(2x^2) - \frac{d}{dx}(5x) + \frac{d}{dx}(1)
+$$
+$$
+h'(x) = 3x^2 + 4x - 5 + 0 = 3x^2 + 4x - 5
+$$
 
 #### Przykład 2: Pochodna iloczynu
 Obliczmy pochodną funkcji $g(x) = x^2 \cdot \sin x$:
 
-$$g'(x) = \frac{d}{dx}(x^2) \cdot \sin x + x^2 \cdot \frac{d}{dx}(\sin x)$$
-$$g'(x) = 2x \cdot \sin x + x^2 \cdot \cos x$$
+$$
+g'(x) = \frac{d}{dx}(x^2) \cdot \sin x + x^2 \cdot \frac{d}{dx}(\sin x)
+$$
+$$
+g'(x) = 2x \cdot \sin x + x^2 \cdot \cos x
+$$
 
 #### Przykład 3: Pochodna ilorazu
 Obliczmy pochodną funkcji $f(x) = \frac{x^2 + 1}{x - 3}$:
 
-$$f'(x) = \frac{(2x) \cdot (x - 3) - (x^2 + 1) \cdot 1}{(x - 3)^2}$$
-$$f'(x) = \frac{2x^2 - 6x - x^2 - 1}{(x - 3)^2} = \frac{x^2 - 6x - 1}{(x - 3)^2}$$
+$$
+f'(x) = \frac{(2x) \cdot (x - 3) - (x^2 + 1) \cdot 1}{(x - 3)^2}
+$$
+$$
+f'(x) = \frac{2x^2 - 6x - x^2 - 1}{(x - 3)^2} = \frac{x^2 - 6x - 1}{(x - 3)^2}
+$$
 
 ## Pochodne funkcji elementarnych
 
 ### Pochodne funkcji potęgowych
 
 1. Dla dowolnej stałej $n$:
-   $$\frac{d}{dx}(x^n) = n \cdot x^{n-1}$$
+$$
+\frac{d}{dx}(x^n) = n \cdot x^{n-1}
+$$
 
 2. Dla funkcji $f(x) = \sqrt{x} = x^{1/2}$:
-   $$f'(x) = \frac{1}{2} \cdot x^{-1/2} = \frac{1}{2\sqrt{x}}$$
+$$
+f'(x) = \frac{1}{2} \cdot x^{-1/2} = \frac{1}{2\sqrt{x}}
+$$
 
 3. Dla funkcji $f(x) = \frac{1}{x} = x^{-1}$:
-   $$f'(x) = -1 \cdot x^{-2} = -\frac{1}{x^2}$$
+$$
+f'(x) = -1 \cdot x^{-2} = -\frac{1}{x^2}
+$$
 
 ### Pochodne funkcji wykładniczych i logarytmicznych
 
 1. Pochodna funkcji wykładniczej o podstawie $e$:
-   $$\frac{d}{dx}(e^x) = e^x$$
+$$
+\frac{d}{dx}(e^x) = e^x
+$$
 
 2. Pochodna funkcji wykładniczej o dowolnej podstawie $a > 0$:
-   $$\frac{d}{dx}(a^x) = a^x \cdot \ln a$$
+$$
+\frac{d}{dx}(a^x) = a^x \cdot \ln a
+$$
 
 3. Pochodna logarytmu naturalnego:
-   $$\frac{d}{dx}(\ln x) = \frac{1}{x}$$
+$$
+\frac{d}{dx}(\ln x) = \frac{1}{x}
+$$
 
 4. Pochodna logarytmu o dowolnej podstawie $a > 0$, $a \neq 1$:
-   $$\frac{d}{dx}(\log_a x) = \frac{1}{x \cdot \ln a}$$
+$$
+\frac{d}{dx}(\log_a x) = \frac{1}{x \cdot \ln a}
+$$
 
 ### Pochodne funkcji trygonometrycznych
 
-1. $$\frac{d}{dx}(\sin x) = \cos x$$
-
-2. $$\frac{d}{dx}(\cos x) = -\sin x$$
-
-3. $$\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = 1 + \tan^2 x$$
-
-4. $$\frac{d}{dx}(\cot x) = -\frac{1}{\sin^2 x} = -1 - \cot^2 x$$
-
-5. $$\frac{d}{dx}(\sec x) = \sec x \cdot \tan x$$
-
-6. $$\frac{d}{dx}(\csc x) = -\csc x \cdot \cot x$$
+1. $\frac{d}{dx}(\sin x) = \cos x$
+2. $\frac{d}{dx}(\cos x) = -\sin x$
+3. $\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = 1 + \tan^2 x$
+4. $\frac{d}{dx}(\cot x) = -\frac{1}{\sin^2 x} = -1 - \cot^2 x$
+5. $\frac{d}{dx}(\sec x) = \sec x \cdot \tan x$
+6. $\frac{d}{dx}(\csc x) = -\csc x \cdot \cot x$
 
 ### Pochodne funkcji cyklometrycznych (arkus)
 
-1. $$\frac{d}{dx}(\arcsin x) = \frac{1}{\sqrt{1-x^2}}$$
-
-2. $$\frac{d}{dx}(\arccos x) = -\frac{1}{\sqrt{1-x^2}}$$
-
-3. $$\frac{d}{dx}(\arctan x) = \frac{1}{1+x^2}$$
-
-4. $$\frac{d}{dx}(\text{arccot}\, x) = -\frac{1}{1+x^2}$$
-
-5. $$\frac{d}{dx}(\text{arcsec}\, x) = \frac{1}{|x|\sqrt{x^2-1}}$$
-
-6. $$\frac{d}{dx}(\text{arccsc}\, x) = -\frac{1}{|x|\sqrt{x^2-1}}$$
+1. $\frac{d}{dx}(\arcsin x) = \frac{1}{\sqrt{1-x^2}}$
+2. $\frac{d}{dx}(\arccos x) = -\frac{1}{\sqrt{1-x^2}}$
+3. $\frac{d}{dx}(\arctan x) = \frac{1}{1+x^2}$
+4. $\frac{d}{dx}(\text{arccot}\, x) = -\frac{1}{1+x^2}$
+5. $\frac{d}{dx}(\text{arcsec}\, x) = \frac{1}{|x|\sqrt{x^2-1}}$
+6. $\frac{d}{dx}(\text{arccsc}\, x) = -\frac{1}{|x|\sqrt{x^2-1}}$
 
 ### Pochodne funkcji hiperbolicznych
 
-1. $$\frac{d}{dx}(\sinh x) = \cosh x$$
-
-2. $$\frac{d}{dx}(\cosh x) = \sinh x$$
-
-3. $$\frac{d}{dx}(\tanh x) = \frac{1}{\cosh^2 x} = 1 - \tanh^2 x$$
-
-4. $$\frac{d}{dx}(\coth x) = -\frac{1}{\sinh^2 x} = -1 + \coth^2 x$$
-
-5. $$\frac{d}{dx}(\text{sech}\, x) = -\text{sech}\, x \cdot \tanh x$$
-
-6. $$\frac{d}{dx}(\text{csch}\, x) = -\text{csch}\, x \cdot \coth x$$
+1. $\frac{d}{dx}(\sinh x) = \cosh x$
+2. $\frac{d}{dx}(\cosh x) = \sinh x$
+3. $\frac{d}{dx}(\tanh x) = \frac{1}{\cosh^2 x} = 1 - \tanh^2 x$
+4. $\frac{d}{dx}(\coth x) = -\frac{1}{\sinh^2 x} = -1 + \coth^2 x$
+5. $\frac{d}{dx}(\text{sech}\, x) = -\text{sech}\, x \cdot \tanh x$
+6. $\frac{d}{dx}(\text{csch}\, x) = -\text{csch}\, x \cdot \coth x$
 
 ### Pochodne funkcji hiperbolicznych odwrotnych
 
-1. $$\frac{d}{dx}(\text{arcsinh}\, x) = \frac{1}{\sqrt{1+x^2}}$$
-
-2. $$\frac{d}{dx}(\text{arccosh}\, x) = \frac{1}{\sqrt{x^2-1}}$$
-
-3. $$\frac{d}{dx}(\text{arctanh}\, x) = \frac{1}{1-x^2}$$
-
-4. $$\frac{d}{dx}(\text{arccoth}\, x) = \frac{1}{1-x^2}$$
+1. $\frac{d}{dx}(\text{arcsinh}\, x) = \frac{1}{\sqrt{1+x^2}}$
+2. $\frac{d}{dx}(\text{arccosh}\, x) = \frac{1}{\sqrt{x^2-1}}$
+3. $\frac{d}{dx}(\text{arctanh}\, x) = \frac{1}{1-x^2}$
+4. $\frac{d}{dx}(\text{arccoth}\, x) = \frac{1}{1-x^2}$
 
 ## Różniczkowanie funkcji złożonej
 
@@ -220,11 +258,15 @@ $$f'(x) = \frac{2x^2 - 6x - x^2 - 1}{(x - 3)^2} = \frac{x^2 - 6x - 1}{(x - 3)^2}
 
 Reguła łańcuchowa (ang. Chain Rule) pozwala na obliczanie pochodnej funkcji złożonej $h(x) = f(g(x))$:
 
-$$h'(x) = f'(g(x)) \cdot g'(x)$$
+$$
+h'(x) = f'(g(x)) \cdot g'(x)
+$$
 
 Można to zapisać także w notacji Leibniza:
 
-$$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+$$
 
 gdzie $y = f(u)$ i $u = g(x)$.
 
@@ -233,50 +275,80 @@ gdzie $y = f(u)$ i $u = g(x)$.
 #### Przykład 1
 Obliczmy pochodną funkcji $h(x) = \sin(x^2)$:
 
-$$h'(x) = \cos(x^2) \cdot \frac{d}{dx}(x^2) = \cos(x^2) \cdot 2x = 2x \cdot \cos(x^2)$$
+$$
+h'(x) = \cos(x^2) \cdot \frac{d}{dx}(x^2) = \cos(x^2) \cdot 2x = 2x \cdot \cos(x^2)
+$$
 
 #### Przykład 2
 Obliczmy pochodną funkcji $f(x) = e^{\sin x}$:
 
-$$f'(x) = e^{\sin x} \cdot \frac{d}{dx}(\sin x) = e^{\sin x} \cdot \cos x$$
+$$
+f'(x) = e^{\sin x} \cdot \frac{d}{dx}(\sin x) = e^{\sin x} \cdot \cos x
+$$
 
 #### Przykład 3
 Obliczmy pochodną funkcji $g(x) = \ln(2x^3 + 1)$:
 
-$$g'(x) = \frac{1}{2x^3 + 1} \cdot \frac{d}{dx}(2x^3 + 1) = \frac{1}{2x^3 + 1} \cdot 6x^2 = \frac{6x^2}{2x^3 + 1}$$
+$$
+g'(x) = \frac{1}{2x^3 + 1} \cdot \frac{d}{dx}(2x^3 + 1) = \frac{1}{2x^3 + 1} \cdot 6x^2 = \frac{6x^2}{2x^3 + 1}
+$$
 
 ## Pochodne wyższych rzędów
 
 Pochodną drugiego rzędu funkcji $f$ definiujemy jako pochodną z pochodnej pierwszego rzędu:
 
-$$f''(x) = (f'(x))'$$
+$$
+f''(x) = (f'(x))'
+$$
 
 W notacji Leibniza:
 
-$$\frac{d^2f}{dx^2} = \frac{d}{dx}\left(\frac{df}{dx}\right)$$
+$$
+\frac{d^2f}{dx^2} = \frac{d}{dx}\left(\frac{df}{dx}\right)
+$$
 
 Analogicznie definiuje się pochodne wyższych rzędów:
 
-$$f^{(n)}(x) = \frac{d^n f}{dx^n}$$
+$$
+f^{(n)}(x) = \frac{d^n f}{dx^n}
+$$
 
 ### Przykłady pochodnych wyższych rzędów
 
 #### Przykład 1
 Dla funkcji $f(x) = x^3 - 2x^2 + 5x - 1$:
 
-$$f'(x) = 3x^2 - 4x + 5$$
-$$f''(x) = 6x - 4$$
-$$f^{(3)}(x) = 6$$
-$$f^{(4)}(x) = 0$$
-$$f^{(n)}(x) = 0 \text{ dla } n \geq 4$$
+$$
+f'(x) = 3x^2 - 4x + 5
+$$
+$$
+f''(x) = 6x - 4
+$$
+$$
+f^{(3)}(x) = 6
+$$
+$$
+f^{(4)}(x) = 0
+$$
+$$
+f^{(n)}(x) = 0 \text{ dla } n \geq 4
+$$
 
 #### Przykład 2
 Dla funkcji $f(x) = \sin x$:
 
-$$f'(x) = \cos x$$
-$$f''(x) = -\sin x$$
-$$f^{(3)}(x) = -\cos x$$
-$$f^{(4)}(x) = \sin x$$
+$$
+f'(x) = \cos x
+$$
+$$
+f''(x) = -\sin x
+$$
+$$
+f^{(3)}(x) = -\cos x
+$$
+$$
+f^{(4)}(x) = \sin x
+$$
 
 Zauważmy, że pochodne funkcji $\sin x$ powtarzają się cyklicznie co 4.
 
@@ -286,11 +358,15 @@ Funkcja uwikłana to funkcja zadana równaniem $F(x, y) = 0$, gdzie $y$ jest fun
 
 Aby obliczyć pochodną $\frac{dy}{dx}$ funkcji uwikłanej, różniczkujemy równanie $F(x, y) = 0$ względem $x$, traktując $y$ jako funkcję $x$:
 
-$$\frac{\partial F}{\partial x} + \frac{\partial F}{\partial y} \cdot \frac{dy}{dx} = 0$$
+$$
+\frac{\partial F}{\partial x} + \frac{\partial F}{\partial y} \cdot \frac{dy}{dx} = 0
+$$
 
 Stąd:
 
-$$\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}$$
+$$
+\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}
+$$
 
 ### Przykład funkcji uwikłanej
 
@@ -298,29 +374,41 @@ Rozważmy równanie okręgu $x^2 + y^2 = 1$. Traktując $y$ jako funkcję $x$, o
 
 Różniczkując względem $x$:
 
-$$2x + 2y \cdot \frac{dy}{dx} = 0$$
+$$
+2x + 2y \cdot \frac{dy}{dx} = 0
+$$
 
 Stąd:
 
-$$\frac{dy}{dx} = -\frac{x}{y}$$
+$$
+\frac{dy}{dx} = -\frac{x}{y}
+$$
 
 ## Różniczka funkcji
 
 Różniczka funkcji $f$ w punkcie $x$ dla przyrostu argumentu $\Delta x$ jest zdefiniowana jako:
 
-$$df = f'(x) \cdot \Delta x$$
+$$
+df = f'(x) \cdot \Delta x
+$$
 
 Dla funkcji wielu zmiennych $f(x_1, x_2, \ldots, x_n)$, różniczka zupełna ma postać:
 
-$$df = \frac{\partial f}{\partial x_1} dx_1 + \frac{\partial f}{\partial x_2} dx_2 + \ldots + \frac{\partial f}{\partial x_n} dx_n$$
+$$
+df = \frac{\partial f}{\partial x_1} dx_1 + \frac{\partial f}{\partial x_2} dx_2 + \ldots + \frac{\partial f}{\partial x_n} dx_n
+$$
 
 ### Zastosowania różniczki
 
 1. **Przybliżone obliczenia**: Dla małych wartości $\Delta x$, przyrost funkcji można przybliżyć różniczką:
-   $$f(x + \Delta x) - f(x) \approx f'(x) \cdot \Delta x$$
+$$
+f(x + \Delta x) - f(x) \approx f'(x) \cdot \Delta x
+$$
 
 2. **Szacowanie błędów pomiarowych**: Jeśli $x$ jest obarczony błędem $\Delta x$, to błąd wartości funkcji można oszacować jako:
-   $$\Delta f \approx |f'(x)| \cdot \Delta x$$
+$$
+\Delta f \approx |f'(x)| \cdot \Delta x
+$$
 
 ### Przykład zastosowania różniczki
 
@@ -328,13 +416,21 @@ Używając różniczki, obliczmy przybliżoną wartość $\sqrt{26}$.
 
 Zastosujemy funkcję $f(x) = \sqrt{x}$ w otoczeniu punktu $x_0 = 25$:
 
-$$f(x_0) = \sqrt{25} = 5$$
-$$f'(x) = \frac{1}{2\sqrt{x}}$$
-$$f'(25) = \frac{1}{2\sqrt{25}} = \frac{1}{10}$$
+$$
+f(x_0) = \sqrt{25} = 5
+$$
+$$
+f'(x) = \frac{1}{2\sqrt{x}}
+$$
+$$
+f'(25) = \frac{1}{2\sqrt{25}} = \frac{1}{10}
+$$
 
 Dla $\Delta x = 1$ (przejście od 25 do 26) mamy:
 
-$$\sqrt{26} \approx \sqrt{25} + f'(25) \cdot 1 = 5 + \frac{1}{10} = 5.1$$
+$$
+\sqrt{26} \approx \sqrt{25} + f'(25) \cdot 1 = 5 + \frac{1}{10} = 5.1
+$$
 
 Porównanie z wartością dokładną: $\sqrt{26} \approx 5.099$ - przybliżenie jest bardzo dobre.
 
@@ -344,13 +440,17 @@ Porównanie z wartością dokładną: $\sqrt{26} \approx 5.099$ - przybliżenie 
 
 Jeśli funkcja $f$ jest ciągła na $[a, b]$, różniczkowalna na $(a, b)$ oraz $f(a) = f(b)$, to istnieje taki punkt $c \in (a, b)$, że:
 
-$$f'(c) = 0$$
+$$
+f'(c) = 0
+$$
 
 ### Twierdzenie Lagrange'a o wartości średniej
 
 Jeśli funkcja $f$ jest ciągła na $[a, b]$ i różniczkowalna na $(a, b)$, to istnieje taki punkt $c \in (a, b)$, że:
 
-$$f'(c) = \frac{f(b) - f(a)}{b - a}$$
+$$
+f'(c) = \frac{f(b) - f(a)}{b - a}
+$$
 
 Interpretacja geometryczna: istnieje punkt na wykresie funkcji, w którym styczna jest równoległa do siecznej łączącej punkty $(a, f(a))$ i $(b, f(b))$.
 
@@ -358,7 +458,9 @@ Interpretacja geometryczna: istnieje punkt na wykresie funkcji, w którym styczn
 
 Jeśli funkcje $f$ i $g$ są ciągłe na $[a, b]$ i różniczkowalne na $(a, b)$ oraz $g'(x) \neq 0$ dla wszystkich $x \in (a, b)$, to istnieje taki punkt $c \in (a, b)$, że:
 
-$$\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}$$
+$$
+\frac{f'(c)}{g'(c)} = \frac{f(b) - f(a)}{g(b) - g(a)}
+$$
 
 ## Zastosowania pochodnych
 
@@ -401,11 +503,17 @@ Niech $x$ będzie długością prostokąta, a $y$ szerokością. Mamy:
 - Pole: $A(x) = x \cdot y = x(50 - x) = 50x - x^2$
 
 Różniczkujemy względem $x$:
-$$A'(x) = 50 - 2x$$
+$$
+A'(x) = 50 - 2x
+$$
 
 Rozwiązujemy równanie $A'(x) = 0$:
-$$50 - 2x = 0$$
-$$x = 25$$
+$$
+50 - 2x = 0
+$$
+$$
+x = 25
+$$
 
 Zatem $y = 50 - 25 = 25$. Prostokąt o wymiarach 25 cm × 25 cm (czyli kwadrat) ma największe pole.
 
@@ -415,24 +523,32 @@ Reguła de l'Hospitala jest metodą obliczania granic funkcji w przypadkach, gdy
 
 Jeżeli $\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0$ lub $\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = \pm \infty$, oraz istnieje granica $\lim_{x \to a} \frac{f'(x)}{g'(x)}$, to:
 
-$$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+$$
 
 ### Przykłady zastosowania reguły de l'Hospitala
 
 #### Przykład 1
 Obliczmy granicę $\lim_{x \to 0} \frac{\sin x}{x}$:
 
-$$\lim_{x \to 0} \frac{\sin x}{x} = \lim_{x \to 0} \frac{\cos x}{1} = \cos 0 = 1$$
+$$
+\lim_{x \to 0} \frac{\sin x}{x} = \lim_{x \to 0} \frac{\cos x}{1} = \cos 0 = 1
+$$
 
 #### Przykład 2
 Obliczmy granicę $\lim_{x \to \infty} \frac{x}{e^x}$:
 
-$$\lim_{x \to \infty} \frac{x}{e^x} = \lim_{x \to \infty} \frac{1}{e^x} = 0$$
+$$
+\lim_{x \to \infty} \frac{x}{e^x} = \lim_{x \to \infty} \frac{1}{e^x} = 0
+$$
 
 #### Przykład 3
 Obliczmy granicę $\lim_{x \to 0} \frac{e^x - 1 - x}{x^2}$:
 
-$$\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x} = \lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}$$
+$$
+\lim_{x \to 0} \frac{e^x - 1 - x}{x^2} = \lim_{x \to 0} \frac{e^x - 1}{2x} = \lim_{x \to 0} \frac{e^x}{2} = \frac{1}{2}
+$$
 
 ## Wzór Taylora
 
@@ -440,11 +556,15 @@ Wzór Taylora pozwala przybliżyć funkcję w otoczeniu punktu za pomocą wielom
 
 Jeśli funkcja $f$ ma pochodne rzędu $n+1$ w otoczeniu punktu $a$, to dla dowolnego $x$ z tego otoczenia:
 
-$$f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \ldots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)$$
+$$
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \ldots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)
+$$
 
 gdzie $R_n(x)$ jest resztą (błędem przybliżenia), która może być wyrażona w postaci:
 
-$$R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}$$
+$$
+R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}
+$$
 
 dla pewnego $\xi$ między $a$ i $x$ (postać Lagrange'a reszty).
 
@@ -452,7 +572,9 @@ dla pewnego $\xi$ między $a$ i $x$ (postać Lagrange'a reszty).
 
 Szczególnym przypadkiem wzoru Taylora jest wzór Maclaurina, gdy $a = 0$:
 
-$$f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \ldots + \frac{f^{(n)}(0)}{n!}x^n + R_n(x)$$
+$$
+f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \ldots + \frac{f^{(n)}(0)}{n!}x^n + R_n(x)
+$$
 
 ### Rozwinięcia Maclaurina ważnych funkcji
 
@@ -488,7 +610,9 @@ Szeregi Taylora mają liczne zastosowania:
 
 Jeśli funkcja $f$ ma ekstremum lokalne w punkcie $x_0$ i jest różniczkowalna w tym punkcie, to:
 
-$$f'(x_0) = 0$$
+$$
+f'(x_0) = 0
+$$
 
 Punkty, w których $f'(x) = 0$ lub $f'(x)$ nie istnieje, nazywamy **punktami krytycznymi** funkcji $f$.
 
@@ -519,10 +643,14 @@ Aby znaleźć ekstrema globalne funkcji ciągłej $f$ na przedziale $[a, b]$, na
 ### Definicje wypukłości i wklęsłości
 
 - Funkcja $f$ jest **wypukła** na przedziale $(a, b)$, jeśli dla dowolnych $x_1, x_2 \in (a, b)$ i każdego $\lambda \in (0, 1)$ zachodzi:
-  $$f(\lambda x_1 + (1-\lambda)x_2) \leq \lambda f(x_1) + (1-\lambda)f(x_2)$$
+$$
+f(\lambda x_1 + (1-\lambda)x_2) \leq \lambda f(x_1) + (1-\lambda)f(x_2)
+$$
 
 - Funkcja $f$ jest **wklęsła** na przedziale $(a, b)$, jeśli dla dowolnych $x_1, x_2 \in (a, b)$ i każdego $\lambda \in (0, 1)$ zachodzi:
-  $$f(\lambda x_1 + (1-\lambda)x_2) \geq \lambda f(x_1) + (1-\lambda)f(x_2)$$
+$$
+f(\lambda x_1 + (1-\lambda)x_2) \geq \lambda f(x_1) + (1-\lambda)f(x_2)
+$$
 
 ### Badanie wypukłości i wklęsłości za pomocą pochodnych
 
@@ -542,72 +670,138 @@ Warunki konieczne istnienia punktu przegięcia:
 ### Zadanie 1: Obliczanie pochodnych funkcji elementarnych
 
 Obliczyć pochodne następujących funkcji:
+
 a) $f(x) = 2x^3 - 4x^2 + 3x - 5$
+
 b) $g(x) = \frac{x^2-1}{x+2}$
+
 c) $h(x) = \sqrt{x^2+1}$
+
 d) $j(x) = \sin^2(x) \cdot \cos(x)$
+
 
 #### Rozwiązanie:
 
 a) $f(x) = 2x^3 - 4x^2 + 3x - 5$
-   $$f'(x) = 6x^2 - 8x + 3$$
+$$
+f'(x) = 6x^2 - 8x + 3
+$$
 
 b) $g(x) = \frac{x^2-1}{x+2}$
-   Stosujemy regułę ilorazu:
-   $$g'(x) = \frac{(2x)(x+2) - (x^2-1)(1)}{(x+2)^2}$$
-   $$g'(x) = \frac{2x^2+4x - x^2+1}{(x+2)^2}$$
-   $$g'(x) = \frac{x^2+4x+1}{(x+2)^2}$$
+
+Stosujemy regułę ilorazu:
+$$
+g'(x) = \frac{(2x)(x+2) - (x^2-1)(1)}{(x+2)^2}
+$$
+$$
+g'(x) = \frac{2x^2+4x - x^2+1}{(x+2)^2}
+$$
+$$
+g'(x) = \frac{x^2+4x+1}{(x+2)^2}
+$$
 
 c) $h(x) = \sqrt{x^2+1} = (x^2+1)^{1/2}$
-   Stosujemy regułę łańcuchową:
-   $$h'(x) = \frac{1}{2}(x^2+1)^{-1/2} \cdot (2x)$$
-   $$h'(x) = \frac{x}{\sqrt{x^2+1}}$$
+
+Stosujemy regułę łańcuchową:
+$$
+h'(x) = \frac{1}{2}(x^2+1)^{-1/2} \cdot (2x)
+$$
+$$
+h'(x) = \frac{x}{\sqrt{x^2+1}}
+$$
 
 d) $j(x) = \sin^2(x) \cdot \cos(x)$
-   Stosujemy regułę iloczynu:
-   $$j'(x) = 2\sin(x)\cos(x) \cdot \cos(x) + \sin^2(x) \cdot (-\sin(x))$$
-   $$j'(x) = 2\sin(x)\cos^2(x) - \sin^3(x)$$
-   $$j'(x) = \sin(x)(2\cos^2(x) - \sin^2(x))$$
-   Korzystając z tożsamości $\sin^2(x) + \cos^2(x) = 1$:
-   $$j'(x) = \sin(x)(2\cos^2(x) - (1-\cos^2(x)))$$
-   $$j'(x) = \sin(x)(3\cos^2(x) - 1)$$
+
+Stosujemy regułę iloczynu:
+$$
+j'(x) = 2\sin(x)\cos(x) \cdot \cos(x) + \sin^2(x) \cdot (-\sin(x))
+$$
+$$
+j'(x) = 2\sin(x)\cos^2(x) - \sin^3(x)
+$$
+$$
+j'(x) = \sin(x)(2\cos^2(x) - \sin^2(x))
+$$
+Korzystając z tożsamości $\sin^2(x) + \cos^2(x) = 1$:
+$$
+j'(x) = \sin(x)(2\cos^2(x) - (1-\cos^2(x)))
+$$
+$$
+j'(x) = \sin(x)(3\cos^2(x) - 1)
+$$
 
 ### Zadanie 2: Obliczanie pochodnych funkcji złożonych
 
 Obliczyć pochodne następujących funkcji:
+
 a) $f(x) = e^{3x^2-1}$
+
 b) $g(x) = \ln(\tan(x))$
+
 c) $h(x) = \arcsin(2x-1)$
+
 d) $j(x) = \cos^3(\ln(x))$
 
 #### Rozwiązanie:
 
 a) $f(x) = e^{3x^2-1}$
-   Stosujemy regułę łańcuchową:
-   $$f'(x) = e^{3x^2-1} \cdot \frac{d}{dx}(3x^2-1)$$
-   $$f'(x) = e^{3x^2-1} \cdot 6x$$
-   $$f'(x) = 6x \cdot e^{3x^2-1}$$
+
+Stosujemy regułę łańcuchową:
+$$
+f'(x) = e^{3x^2-1} \cdot \frac{d}{dx}(3x^2-1)
+$$
+$$
+f'(x) = e^{3x^2-1} \cdot 6x
+$$
+$$
+f'(x) = 6x \cdot e^{3x^2-1}
+$$
 
 b) $g(x) = \ln(\tan(x))$
-   Stosujemy regułę łańcuchową:
-   $$g'(x) = \frac{1}{\tan(x)} \cdot \frac{d}{dx}(\tan(x))$$
-   $$g'(x) = \frac{1}{\tan(x)} \cdot \frac{1}{\cos^2(x)}$$
-   $$g'(x) = \frac{1}{\tan(x) \cdot \cos^2(x)}$$
-   Korzystając z tożsamości $\tan(x) = \frac{\sin(x)}{\cos(x)}$:
-   $$g'(x) = \frac{\cos(x)}{\sin(x) \cdot \cos^2(x)} = \frac{1}{\sin(x) \cdot \cos(x)} = \frac{1}{\sin(x)\cos(x)}$$
+
+Stosujemy regułę łańcuchową:
+$$
+g'(x) = \frac{1}{\tan(x)} \cdot \frac{d}{dx}(\tan(x))
+$$
+$$
+g'(x) = \frac{1}{\tan(x)} \cdot \frac{1}{\cos^2(x)}
+$$
+$$
+g'(x) = \frac{1}{\tan(x) \cdot \cos^2(x)}
+$$
+Korzystając z tożsamości $\tan(x) = \frac{\sin(x)}{\cos(x)}$:
+$$
+g'(x) = \frac{\cos(x)}{\sin(x) \cdot \cos^2(x)} = \frac{1}{\sin(x) \cdot \cos(x)} = \frac{1}{\sin(x)\cos(x)}
+$$
 
 c) $h(x) = \arcsin(2x-1)$
-   Stosujemy regułę łańcuchową:
-   $$h'(x) = \frac{1}{\sqrt{1-(2x-1)^2}} \cdot \frac{d}{dx}(2x-1)$$
-   $$h'(x) = \frac{1}{\sqrt{1-(2x-1)^2}} \cdot 2$$
-   $$h'(x) = \frac{2}{\sqrt{1-(2x-1)^2}} = \frac{2}{\sqrt{1-4x^2+4x-1}} = \frac{2}{\sqrt{4x-4x^2}} = \frac{2}{\sqrt{4x(1-x)}} = \frac{1}{\sqrt{x(1-x)}}$$
+
+Stosujemy regułę łańcuchową:
+$$
+h'(x) = \frac{1}{\sqrt{1-(2x-1)^2}} \cdot \frac{d}{dx}(2x-1)
+$$
+$$
+h'(x) = \frac{1}{\sqrt{1-(2x-1)^2}} \cdot 2
+$$
+$$
+h'(x) = \frac{2}{\sqrt{1-(2x-1)^2}} = \frac{2}{\sqrt{1-4x^2+4x-1}} = \frac{2}{\sqrt{4x-4x^2}} = \frac{2}{\sqrt{4x(1-x)}} = \frac{1}{\sqrt{x(1-x)}}
+$$
 
 d) $j(x) = \cos^3(\ln(x))$
-   Stosujemy regułę łańcuchową:
-   $$j'(x) = 3\cos^2(\ln(x)) \cdot \frac{d}{dx}(\cos(\ln(x)))$$
-   $$j'(x) = 3\cos^2(\ln(x)) \cdot (-\sin(\ln(x))) \cdot \frac{d}{dx}(\ln(x))$$
-   $$j'(x) = 3\cos^2(\ln(x)) \cdot (-\sin(\ln(x))) \cdot \frac{1}{x}$$
-   $$j'(x) = -\frac{3\cos^2(\ln(x))\sin(\ln(x))}{x}$$
+
+Stosujemy regułę łańcuchową:
+$$
+j'(x) = 3\cos^2(\ln(x)) \cdot \frac{d}{dx}(\cos(\ln(x)))
+$$
+$$
+j'(x) = 3\cos^2(\ln(x)) \cdot (-\sin(\ln(x))) \cdot \frac{d}{dx}(\ln(x))
+$$
+$$
+j'(x) = 3\cos^2(\ln(x)) \cdot (-\sin(\ln(x))) \cdot \frac{1}{x}
+$$
+$$
+j'(x) = -\frac{3\cos^2(\ln(x))\sin(\ln(x))}{x}
+$$
 
 ### Zadanie 3: Badanie monotoniczności i ekstremów funkcji
 
@@ -616,19 +810,29 @@ Zbadać monotoniczność i ekstrema lokalne funkcji $f(x) = 2x^3 - 3x^2 - 12x + 
 #### Rozwiązanie:
 
 Obliczamy pochodną:
-$$f'(x) = 6x^2 - 6x - 12 = 6(x^2 - x - 2)$$
+$$
+f'(x) = 6x^2 - 6x - 12 = 6(x^2 - x - 2)
+$$
 
 Rozwiązujemy równanie $f'(x) = 0$:
-$$6(x^2 - x - 2) = 0$$
-$$x^2 - x - 2 = 0$$
+$$
+6(x^2 - x - 2) = 0
+$$
+$$
+x^2 - x - 2 = 0
+$$
 
 Korzystając z wzoru na pierwiastki równania kwadratowego:
-$$x = \frac{1 \pm \sqrt{1 + 8}}{2} = \frac{1 \pm 3}{2}$$
+$$
+x = \frac{1 \pm \sqrt{1 + 8}}{2} = \frac{1 \pm 3}{2}
+$$
 
 Zatem $x_1 = -1$ i $x_2 = 2$ są punktami krytycznymi.
 
 Obliczamy drugą pochodną:
-$$f''(x) = 12x - 6$$
+$$
+f''(x) = 12x - 6
+$$
 
 W punktach krytycznych:
 - $f''(-1) = 12 \cdot (-1) - 6 = -18 < 0$, więc $x = -1$ to maksimum lokalne
@@ -652,15 +856,25 @@ Zbadać wypukłość i punkty przegięcia funkcji $f(x) = x^4 - 8x^3 + 18x^2 - 5
 #### Rozwiązanie:
 
 Obliczamy pochodne:
-$$f'(x) = 4x^3 - 24x^2 + 36x$$
-$$f''(x) = 12x^2 - 48x + 36 = 12(x^2 - 4x + 3)$$
+$$
+f'(x) = 4x^3 - 24x^2 + 36x
+$$
+$$
+f''(x) = 12x^2 - 48x + 36 = 12(x^2 - 4x + 3)
+$$
 
 Rozwiązujemy równanie $f''(x) = 0$:
-$$12(x^2 - 4x + 3) = 0$$
-$$x^2 - 4x + 3 = 0$$
+$$
+12(x^2 - 4x + 3) = 0
+$$
+$$
+x^2 - 4x + 3 = 0
+$$
 
 Korzystając z wzoru na pierwiastki równania kwadratowego:
-$$x = \frac{4 \pm \sqrt{16 - 12}}{2} = \frac{4 \pm 2}{2}$$
+$$
+x = \frac{4 \pm \sqrt{16 - 12}}{2} = \frac{4 \pm 2}{2}
+$$
 
 Zatem $x_1 = 1$ i $x_2 = 3$ są punktami, w których druga pochodna wynosi zero.
 
@@ -680,38 +894,50 @@ Punkty przegięcia to $(1, 6)$ i $(3, 22)$.
 ### Zadanie 5: Zastosowanie reguły de l'Hospitala
 
 Obliczyć następujące granice:
+
 a) $\lim_{x \to 0} \frac{\sin(3x)}{x}$
+
 b) $\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3}$
+
 c) $\lim_{x \to 1} \frac{\ln(x)}{x-1}$
+
 d) $\lim_{x \to \infty} x \cdot \sin\left(\frac{1}{x}\right)$
 
 #### Rozwiązanie:
 
 a) $\lim_{x \to 0} \frac{\sin(3x)}{x}$
 
-   Podstawiając $x = 0$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
-   
-   $$\lim_{x \to 0} \frac{\sin(3x)}{x} = \lim_{x \to 0} \frac{3\cos(3x)}{1} = 3\cos(0) = 3$$
+Podstawiając $x = 0$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
+
+$$
+\lim_{x \to 0} \frac{\sin(3x)}{x} = \lim_{x \to 0} \frac{3\cos(3x)}{1} = 3\cos(0) = 3
+$$
 
 b) $\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3}$
 
-   Podstawiając $x = 0$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
-   
-   $$\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3} = \lim_{x \to 0} \frac{e^x - 1 - x}{3x^2} = \lim_{x \to 0} \frac{e^x - 1}{6x} = \lim_{x \to 0} \frac{e^x}{6} = \frac{1}{6}$$
+Podstawiając $x = 0$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
+
+$$
+\lim_{x \to 0} \frac{e^x - 1 - x - \frac{x^2}{2}}{x^3} = \lim_{x \to 0} \frac{e^x - 1 - x}{3x^2} = \lim_{x \to 0} \frac{e^x - 1}{6x} = \lim_{x \to 0} \frac{e^x}{6} = \frac{1}{6}
+$$
 
 c) $\lim_{x \to 1} \frac{\ln(x)}{x-1}$
 
-   Podstawiając $x = 1$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
-   
-   $$\lim_{x \to 1} \frac{\ln(x)}{x-1} = \lim_{x \to 1} \frac{\frac{1}{x}}{1} = \lim_{x \to 1} \frac{1}{x} = 1$$
+Podstawiając $x = 1$, otrzymujemy symbol nieoznaczony $\frac{0}{0}$, więc stosujemy regułę de l'Hospitala:
+
+$$
+\lim_{x \to 1} \frac{\ln(x)}{x-1} = \lim_{x \to 1} \frac{\frac{1}{x}}{1} = \lim_{x \to 1} \frac{1}{x} = 1
+$$
 
 d) $\lim_{x \to \infty} x \cdot \sin\left(\frac{1}{x}\right)$
 
-   Dla tej granicy wprowadzamy podstawienie $t = \frac{1}{x}$. Gdy $x \to \infty$, to $t \to 0$:
-   
-   $$\lim_{x \to \infty} x \cdot \sin\left(\frac{1}{x}\right) = \lim_{t \to 0} \frac{\sin(t)}{t} = 1$$
+Dla tej granicy wprowadzamy podstawienie $t = \frac{1}{x}$. Gdy $x \to \infty$, to $t \to 0$:
 
-   Skorzystaliśmy z faktu, że $\lim_{t \to 0} \frac{\sin(t)}{t} = 1$.
+$$
+\lim_{x \to \infty} x \cdot \sin\left(\frac{1}{x}\right) = \lim_{t \to 0} \frac{\sin(t)}{t} = 1
+$$
+
+Skorzystaliśmy z faktu, że $\lim_{t \to 0} \frac{\sin(t)}{t} = 1$.
 
 ### Zadanie 6: Optymalizacja - zadanie geometryczne
 
@@ -725,14 +951,22 @@ Z warunków zadania:
 - Pole: $P(a) = a \cdot b = a(10 - a) = 10a - a^2$
 
 Aby znaleźć maksimum funkcji $P(a)$, obliczamy pochodną:
-$$P'(a) = 10 - 2a$$
+$$
+P'(a) = 10 - 2a
+$$
 
 Rozwiązujemy równanie $P'(a) = 0$:
-$$10 - 2a = 0$$
-$$a = 5$$
+$$
+10 - 2a = 0
+$$
+$$
+a = 5
+$$
 
 Sprawdzamy drugą pochodną:
-$$P''(a) = -2 < 0$$
+$$
+P''(a) = -2 < 0
+$$
 
 Ponieważ $P''(5) < 0$, w punkcie $a = 5$ funkcja osiąga maksimum.
 
@@ -743,53 +977,83 @@ Odpowiedź: Prostokąt o bokach 5 cm i 5 cm (czyli kwadrat) ma największe pole 
 ### Zadanie 7: Zastosowanie pochodnej w fizyce
 
 Ciało porusza się ruchem prostoliniowym, a jego położenie (w metrach) w funkcji czasu $t$ jest dane wzorem $s(t) = t^3 - 6t^2 + 9t + 1$ dla $t \geq 0$. Znaleźć:
+
 a) Prędkość ciała w chwili $t = 2$
+
 b) Przyspieszenie ciała w chwili $t = 2$
+
 c) Chwile, w których ciało zmienia kierunek ruchu
+
 d) Chwilę, w której ciało osiąga maksymalną prędkość
 
 #### Rozwiązanie:
 
 a) Prędkość ciała to pochodna funkcji położenia:
-   $$v(t) = s'(t) = 3t^2 - 12t + 9$$
-   Prędkość w chwili $t = 2$:
-   $$v(2) = 3 \cdot 2^2 - 12 \cdot 2 + 9 = 12 - 24 + 9 = -3 \text{ m/s}$$
-   Ujemna wartość prędkości oznacza, że ciało porusza się w kierunku przeciwnym do przyjętego kierunku dodatniego.
+$$
+v(t) = s'(t) = 3t^2 - 12t + 9
+$$
+Prędkość w chwili $t = 2$:
+$$
+v(2) = 3 \cdot 2^2 - 12 \cdot 2 + 9 = 12 - 24 + 9 = -3 \text{ m/s}
+$$
+Ujemna wartość prędkości oznacza, że ciało porusza się w kierunku przeciwnym do przyjętego kierunku dodatniego.
 
 b) Przyspieszenie ciała to pochodna funkcji prędkości:
-   $$a(t) = v'(t) = 6t - 12$$
-   Przyspieszenie w chwili $t = 2$:
-   $$a(2) = 6 \cdot 2 - 12 = 12 - 12 = 0 \text{ m/s}^2$$
+$$
+a(t) = v'(t) = 6t - 12
+$$
+Przyspieszenie w chwili $t = 2$:
+$$
+a(2) = 6 \cdot 2 - 12 = 12 - 12 = 0 \text{ m/s}^2
+$$
 
 c) Ciało zmienia kierunek ruchu w chwilach, gdy prędkość wynosi zero:
-   $$v(t) = 3t^2 - 12t + 9 = 0$$
-   $$3(t^2 - 4t + 3) = 0$$
-   $$t^2 - 4t + 3 = 0$$
-   
-   Korzystając z wzoru na pierwiastki równania kwadratowego:
-   $$t = \frac{4 \pm \sqrt{16 - 12}}{2} = \frac{4 \pm 2}{2}$$
-   
-   Zatem $t_1 = 1$ i $t_2 = 3$ są chwilami, w których ciało zmienia kierunek ruchu.
+$$
+v(t) = 3t^2 - 12t + 9 = 0
+$$
+$$
+3(t^2 - 4t + 3) = 0
+$$
+$$
+t^2 - 4t + 3 = 0
+$$
+
+Korzystając z wzoru na pierwiastki równania kwadratowego:
+$$
+t = \frac{4 \pm \sqrt{16 - 12}}{2} = \frac{4 \pm 2}{2}
+$$
+
+Zatem $t_1 = 1$ i $t_2 = 3$ są chwilami, w których ciało zmienia kierunek ruchu.
 
 d) Maksymalną prędkość ciało osiąga w chwili, gdy przyspieszenie wynosi zero:
-   $$a(t) = 6t - 12 = 0$$
-   $$t = 2$$
-   
-   Aby potwierdzić, że to maksimum (a nie minimum) prędkości, sprawdzamy znak drugiej pochodnej:
-   $$a'(t) = 6 > 0$$
-   
-   Ponieważ $a'(t) > 0$, w chwili $t = 2$ ciało osiąga minimalną (a nie maksymalną) prędkość.
-   
-   Z analizy punktów c) wiemy, że prędkość jest równa zero dla $t = 1$ i $t = 3$, a dla $t = 2$ jest ujemna. Zatem dla $t < 1$ i $t > 3$ prędkość jest dodatnia.
-   
-   Aby znaleźć chwilę maksymalnej prędkości, musimy zbadać zachowanie funkcji $v(t)$ dla $t \geq 0$.
-   Ponieważ $\lim_{t \to \infty} v(t) = \infty$ (dominujący składnik $3t^2$), maksymalna prędkość nie jest osiągana w skończonym czasie dla $t > 3$.
-   
-   Dla $t \in [0, 1]$ znajdujemy maksimum funkcji $v(t)$ badając jej wartość na końcach przedziału:
-   $$v(0) = 9$$
-   $$v(1) = 0$$
-   
-   Zatem maksymalna prędkość wynosi 9 m/s i jest osiągana w chwili $t = 0$.
+$$
+a(t) = 6t - 12 = 0
+$$
+$$
+t = 2
+$$
+
+Aby potwierdzić, że to maksimum (a nie minimum) prędkości, sprawdzamy znak drugiej pochodnej:
+$$
+a'(t) = 6 > 0
+$$
+
+Ponieważ $a'(t) > 0$, w chwili $t = 2$ ciało osiąga minimalną (a nie maksymalną) prędkość.
+
+Z analizy punktów c) wiemy, że prędkość jest równa zero dla $t = 1$ i $t = 3$, a dla $t = 2$ jest ujemna. Zatem dla $t < 1$ i $t > 3$ prędkość jest dodatnia.
+
+Aby znaleźć chwilę maksymalnej prędkości, musimy zbadać zachowanie funkcji $v(t)$ dla $t \geq 0$.
+Ponieważ $\lim_{t \to \infty} v(t) = \infty$ (dominujący składnik $3t^2$), maksymalna prędkość nie jest osiągana w skończonym czasie dla $t > 3$.
+
+Dla $t \in [0, 1]$ znajdujemy maksimum funkcji $v(t)$ badając jej wartość na końcach przedziału:
+$$
+v(0) = 9
+$$
+$$
+v(1) = 0
+$$
+
+Zatem maksymalna prędkość wynosi 9 m/s i jest osiągana w chwili $t = 0$.
 
 ### Zadanie 8: Przybliżanie funkcji wielomianem Taylora
 
@@ -799,27 +1063,49 @@ Wyznaczyć wielomian Taylora trzeciego stopnia dla funkcji $f(x) = e^x$ w otocze
 
 Wielomian Taylora trzeciego stopnia dla funkcji $f(x)$ w otoczeniu punktu $x_0$ ma postać:
 
-$$P_3(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)^2 + \frac{f^{(3)}(x_0)}{3!}(x-x_0)^3$$
+$$
+P_3(x) = f(x_0) + f'(x_0)(x-x_0) + \frac{f''(x_0)}{2!}(x-x_0)^2 + \frac{f^{(3)}(x_0)}{3!}(x-x_0)^3
+$$
 
 Obliczamy pochodne funkcji $f(x) = e^x$:
-$$f(x) = e^x$$
-$$f'(x) = e^x$$
-$$f''(x) = e^x$$
-$$f^{(3)}(x) = e^x$$
+$$
+f(x) = e^x
+$$
+$$
+f'(x) = e^x
+$$
+$$
+f''(x) = e^x
+$$
+$$
+f^{(3)}(x) = e^x
+$$
 
 Wartości pochodnych w punkcie $x_0 = 0$:
-$$f(0) = e^0 = 1$$
-$$f'(0) = e^0 = 1$$
-$$f''(0) = e^0 = 1$$
-$$f^{(3)}(0) = e^0 = 1$$
+$$
+f(0) = e^0 = 1
+$$
+$$
+f'(0) = e^0 = 1
+$$
+$$
+f''(0) = e^0 = 1
+$$
+$$
+f^{(3)}(0) = e^0 = 1
+$$
 
 Zatem wielomian Taylora trzeciego stopnia dla funkcji $e^x$ w otoczeniu punktu $x_0 = 0$ wynosi:
 
-$$P_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}$$
+$$
+P_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}
+$$
 
 Błąd przybliżenia można oszacować za pomocą wzoru na resztę Lagrange'a:
 
-$$R_3(x) = \frac{f^{(4)}(\xi)}{4!}x^4$$
+$$
+R_3(x) = \frac{f^{(4)}(\xi)}{4!}x^4
+$$
 
 gdzie $\xi$ leży między 0 a $x$.
 
@@ -831,7 +1117,9 @@ Ponieważ $f^{(4)}(x) = e^x$, dla $x \in [-0.5, 0.5]$ mamy:
 Zatem maksymalna wartość $f^{(4)}(\xi)$ w przedziale $[-0.5, 0.5]$ wynosi około 1.6487.
 Maksymalny błąd przybliżenia:
 
-$$|R_3(x)| \leq \frac{1.6487}{24} \cdot 0.5^4 \approx 0.0086$$
+$$
+|R_3(x)| \leq \frac{1.6487}{24} \cdot 0.5^4 \approx 0.0086
+$$
 
 Odpowiedź: Wielomian Taylora trzeciego stopnia dla funkcji $e^x$ w otoczeniu punktu $x_0 = 0$ wynosi $P_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}$, a błąd przybliżenia w przedziale $[-0.5, 0.5]$ nie przekracza 0.0086.
 
@@ -843,15 +1131,21 @@ Dana jest funkcja uwikłana określona równaniem $x^3 + 2xy + y^3 = 6$. Obliczy
 
 Aby obliczyć pochodną funkcji uwikłanej, różniczkujemy dane równanie względem $x$, traktując $y$ jako funkcję $x$:
 
-$$3x^2 + 2y + 2x \cdot \frac{dy}{dx} + 3y^2 \cdot \frac{dy}{dx} = 0$$
+$$
+3x^2 + 2y + 2x \cdot \frac{dy}{dx} + 3y^2 \cdot \frac{dy}{dx} = 0
+$$
 
 Przekształcamy, aby wyrazić $\frac{dy}{dx}$:
 
-$$\frac{dy}{dx} = -\frac{3x^2 + 2y}{2x + 3y^2}$$
+$$
+\frac{dy}{dx} = -\frac{3x^2 + 2y}{2x + 3y^2}
+$$
 
 Obliczamy wartość pochodnej w punkcie $(1, 1)$:
 
-$$\frac{dy}{dx}|_{(1,1)} = -\frac{3 \cdot 1^2 + 2 \cdot 1}{2 \cdot 1 + 3 \cdot 1^2} = -\frac{3 + 2}{2 + 3} = -\frac{5}{5} = -1$$
+$$
+\frac{dy}{dx}|_{(1,1)} = -\frac{3 \cdot 1^2 + 2 \cdot 1}{2 \cdot 1 + 3 \cdot 1^2} = -\frac{3 + 2}{2 + 3} = -\frac{5}{5} = -1
+$$
 
 Odpowiedź: Wartość pochodnej $\frac{dy}{dx}$ w punkcie $(1, 1)$ wynosi $-1$.
 
@@ -860,39 +1154,58 @@ Odpowiedź: Wartość pochodnej $\frac{dy}{dx}$ w punkcie $(1, 1)$ wynosi $-1$.
 Funkcja kosztu całkowitego produkcji pewnego towaru dana jest wzorem $C(x) = x^3 - 6x^2 + 15x + 10$, gdzie $x$ oznacza liczbę wyprodukowanych jednostek towaru.
 
 a) Wyznacz funkcję kosztu krańcowego.
+
 b) Znajdź poziom produkcji, przy którym koszt krańcowy osiąga wartość minimalną, jeśli taki istnieje.
+
 c) Sprawdź, czy funkcja kosztu całkowitego jest wypukła i dla jakich wartości $x$.
 
 #### Rozwiązanie:
 
 a) Aby znaleźć koszt krańcowy, obliczamy pochodną funkcji kosztu całkowitego:
 
-$$C'(x) = \frac{dC}{dx} = 3x^2 - 12x + 15$$
+$$
+C'(x) = \frac{dC}{dx} = 3x^2 - 12x + 15
+$$
 
 Koszt krańcowy reprezentuje zmianę kosztu całkowitego przy zwiększeniu produkcji o jednostkę.
 
 b) Aby znaleźć poziom produkcji, przy którym koszt krańcowy osiąga wartość minimalną, obliczamy drugą pochodną i przyrównujemy pierwszą pochodną do zera:
 
-$$C''(x) = \frac{d^2C}{dx^2} = 6x - 12$$
+$$
+C''(x) = \frac{d^2C}{dx^2} = 6x - 12
+$$
 
 Przyrównujemy pierwszą pochodną do zera:
-$$C'(x) = 3x^2 - 12x + 15 = 0$$
+$$
+C'(x) = 3x^2 - 12x + 15 = 0
+$$
 
 Rozwiązujemy równanie kwadratowe:
-$$3x^2 - 12x + 15 = 0$$
-$$x^2 - 4x + 5 = 0$$
+$$
+3x^2 - 12x + 15 = 0
+$$
+$$
+x^2 - 4x + 5 = 0
+$$
 
 Wyznaczamy deltę:
-$$\Delta = (-4)^2 - 4 \cdot 1 \cdot 5 = 16 - 20 = -4$$
+$$
+\Delta = (-4)^2 - 4 \cdot 1 \cdot 5 = 16 - 20 = -4
+$$
 
 Ponieważ delta jest ujemna, równanie nie ma rozwiązań rzeczywistych, co oznacza, że funkcja kosztu krańcowego nie ma ekstremum lokalnego.
 
 c) Aby sprawdzić, czy funkcja kosztu całkowitego jest wypukła, analizujemy drugą pochodną:
-$$C''(x) = 6x - 12$$
+$$
+C''(x) = 6x - 12
+$$
 
 Funkcja kosztu jest wypukła dla $x > 2$ (gdy druga pochodna jest dodatnia), a wklęsła dla $x < 2$ (gdy druga pochodna jest ujemna).
 
 Odpowiedź: 
+
 a) Koszt krańcowy wynosi $C'(x) = 3x^2 - 12x + 15$.
+
 b) Funkcja kosztu krańcowego nie ma wartości minimalnej.
+
 c) Funkcja kosztu całkowitego jest wypukła dla $x > 2$. 

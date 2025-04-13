@@ -24,8 +24,17 @@ body {
     text-align: right
 }
 
+.katex-display, .katex {
+  text-align: left !important;
+}
+
 .katex {
-    line-height: 2 !important;
+    max-width: 100%;
+    white-space: normal !important;
+}
+
+.katex-display>.katex {
+    line-height: 3 !important;
 }
 
 h2 {
