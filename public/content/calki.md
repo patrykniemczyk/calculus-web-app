@@ -99,7 +99,10 @@ Obliczmy $\int \sin(3x+2)\,dx$
 Zastosujmy podstawienie $u = 3x+2$, wówczas $dx = \frac{du}{3}$
 
 $$
-\int \sin(3x+2)\,dx = \int \sin u \cdot \frac{du}{3} = \frac{1}{3} \int \sin u\,du = \frac{1}{3} \cdot (-\cos u) + C = -\frac{1}{3} \cos(3x+2) + C
+\int \sin(3x+2)\,dx = \int \sin u \cdot \frac{du}{3}
+$$
+$$
+= \frac{1}{3} \int \sin u\,du = \frac{1}{3} \cdot (-\cos u) + C = -\frac{1}{3} \cos(3x+2) + C
 $$
 
 ### Całkowanie przez części
@@ -207,11 +210,10 @@ $$
 Stosujemy podstawienie $u = \cos x$, wtedy $du = -\sin x\,dx$
 
 $$
-\int \sin^3 x\,dx = \int \sin x \cdot (1-\cos^2 x)\,dx = \int (1-u^2) \cdot (-du) = \int (u^2-1)\,du = \frac{u^3}{3} - u + C
+\int \sin^3 x\,dx = \int \sin x \cdot (1-\cos^2 x)\,dx = \int (1-u^2) \cdot (-du)
 $$
-
 $$
-= \frac{\cos^3 x}{3} - \cos x + C
+= \int (u^2-1)\,du = \frac{u^3}{3} - u + C = \frac{\cos^3 x}{3} - \cos x + C
 $$
 
 ### Całki postaci $\int R(\sin x, \cos x)\,dx$
@@ -325,9 +327,7 @@ Całki niewłaściwe to całki oznaczone, w których co najmniej jeden z warunk�
 Całki na nieograniczonych przedziałach:
 
 1. $\int_a^{\infty} f(x)\,dx = \lim_{b \to \infty} \int_a^b f(x)\,dx$
-
 2. $\int_{-\infty}^b f(x)\,dx = \lim_{a \to -\infty} \int_a^b f(x)\,dx$
-
 3. $\int_{-\infty}^{\infty} f(x)\,dx = \int_{-\infty}^c f(x)\,dx + \int_c^{\infty} f(x)\,dx$
 
 gdzie $c$ jest dowolną liczbą rzeczywistą.
@@ -507,7 +507,10 @@ Obliczmy całkę $\iint_D (x^2 + y^2)\,dA$, gdzie $D$ jest kołem o środku w po
 W współrzędnych biegunowych $x^2 + y^2 = r^2$ i obszar $D$ jest opisany przez $0 \leq r \leq R$, $0 \leq \theta < 2\pi$.
 
 $$
-\iint_D (x^2 + y^2)\,dA = \int_0^{2\pi} \int_0^R r^2 \cdot r\,dr\,d\theta = \int_0^{2\pi} \int_0^R r^3\,dr\,d\theta = \int_0^{2\pi} \left[\frac{r^4}{4}\right]_0^R\,d\theta = \int_0^{2\pi} \frac{R^4}{4}\,d\theta = \frac{R^4}{4} \cdot 2\pi = \frac{\pi R^4}{2}
+\iint_D (x^2 + y^2)\,dA = \int_0^{2\pi} \int_0^R r^2 \cdot r\,dr\,d\theta = \int_0^{2\pi} \int_0^R r^3\,dr\,d\theta =
+$$
+$$
+\int_0^{2\pi} \left[\frac{r^4}{4}\right]_0^R\,d\theta = \int_0^{2\pi} \frac{R^4}{4}\,d\theta = \frac{R^4}{4} \cdot 2\pi = \frac{\pi R^4}{2}
 $$
 
 ### Całki potrójne
@@ -606,7 +609,10 @@ $$
 Dla krzywej zadanej parametrycznie: $\mathbf{r}(t) = (x(t), y(t), z(t))$, $t \in [a,b]$, całka ta wynosi:
 
 $$
-\int_C P\,dx + Q\,dy + R\,dz = \int_a^b [P(x(t), y(t), z(t)) \cdot x'(t) + Q(x(t), y(t), z(t)) \cdot y'(t) + R(x(t), y(t), z(t)) \cdot z'(t)]\,dt
+\int_C P\,dx + Q\,dy + R\,dz =
+$$
+$$
+\int_a^b [P(x(t), y(t), z(t)) \cdot x'(t) + Q(x(t), y(t), z(t)) \cdot y'(t) + R(x(t), y(t), z(t)) \cdot z'(t)]\,dt
 $$
 
 #### Przykład
@@ -716,9 +722,7 @@ gdzie $\text{div}\,\mathbf{F} = \nabla \cdot \mathbf{F}$ jest dywergencją pola 
 ### Zastosowania twierdzeń całkowych
 
 1. **Elektrodynamika**: Równania Maxwella często formułuje się przy użyciu całek powierzchniowych i objętościowych oraz twierdzeń Stokesa i Gaussa.
-
 2. **Mechanika płynów**: Równanie ciągłości i równanie Naviera-Stokesa opisują zachowanie płynów przy użyciu dywergencji i rotacji pól wektorowych.
-
 3. **Analiza pól**: Twierdzenia całkowe pozwalają badać własności pól wektorowych, takie jak potencjalność (zachowawczość) pola.
 
 ## Zadania z rozwiązaniami
@@ -747,7 +751,10 @@ $u = \ln x$, wtedy $du = \frac{1}{x}\,dx$
 $dv = x\,dx$, wtedy $v = \frac{x^2}{2}$
 
 $$
-\int x \cdot \ln x\,dx = \ln x \cdot \frac{x^2}{2} - \int \frac{x^2}{2} \cdot \frac{1}{x}\,dx = \frac{x^2 \ln x}{2} - \int \frac{x}{2}\,dx = \frac{x^2 \ln x}{2} - \frac{x^2}{4} + C = \frac{x^2 \ln x}{2} - \frac{x^2}{4} + C
+\int x \cdot \ln x\,dx = \ln x \cdot \frac{x^2}{2} - \int \frac{x^2}{2} \cdot \frac{1}{x}\,dx =
+$$
+$$
+\frac{x^2 \ln x}{2} - \int \frac{x}{2}\,dx = \frac{x^2 \ln x}{2} - \frac{x^2}{4} + C = \frac{x^2 \ln x}{2} - \frac{x^2}{4} + C
 $$
 
 ### Zadanie 3: Całkowanie funkcji wymiernej
@@ -783,7 +790,13 @@ Rozwiązując układ równań: $A = 3$, $B = -1$
 
 Zatem:
 $$
-\int \frac{2x-5}{(x-1)(x-2)}\,dx = \int \left(\frac{3}{x-1} - \frac{1}{x-2}\right)\,dx = 3\ln|x-1| - \ln|x-2| + C = \ln|x-1|^3 - \ln|x-2| + C = \ln\left|\frac{(x-1)^3}{x-2}\right| + C
+\int \frac{2x-5}{(x-1)(x-2)}\,dx = \int \left(\frac{3}{x-1} - \frac{1}{x-2}\right)\,dx =
+$$
+$$
+3\ln|x-1| - \ln|x-2| + C = \ln|x-1|^3 - \ln|x-2| + C =
+$$
+$$
+\ln\left|\frac{(x-1)^3}{x-2}\right| + C
 $$
 
 ### Zadanie 4: Całka oznaczona
@@ -808,7 +821,10 @@ Zbadać zbieżność całki $\int_1^{\infty} \frac{dx}{x^p}$ w zależności od p
 **Rozwiązanie:**
 
 $$
-\int_1^{\infty} \frac{dx}{x^p} = \lim_{b \to \infty} \int_1^b \frac{dx}{x^p} = \lim_{b \to \infty} \left[\frac{x^{-p+1}}{-p+1}\right]_1^b = \lim_{b \to \infty} \left(\frac{b^{-p+1}}{-p+1} - \frac{1}{-p+1}\right) = \lim_{b \to \infty} \frac{1}{-p+1} \cdot (b^{-p+1} - 1)
+\int_1^{\infty} \frac{dx}{x^p} = \lim_{b \to \infty} \int_1^b \frac{dx}{x^p} = \lim_{b \to \infty} \left[\frac{x^{-p+1}}{-p+1}\right]_1^b =
+$$
+$$
+\lim_{b \to \infty} \left(\frac{b^{-p+1}}{-p+1} - \frac{1}{-p+1}\right) = \lim_{b \to \infty} \frac{1}{-p+1} \cdot (b^{-p+1} - 1)
 $$
 
 Dla $p > 1$: $-p+1 < 0$, więc $\lim_{b \to \infty} b^{-p+1} = 0$, co daje $\int_1^{\infty} \frac{dx}{x^p} = \frac{1}{p-1}$. Całka jest zbieżna.
@@ -874,17 +890,34 @@ Oblicz objętość bryły powstałej przez obrót obszaru ograniczonego krzywymi
 
 **Rozwiązanie:**
 
-Punkty przecięcia krzywych: $x^2 = 4 \implies x = \pm 2$
+Punkty przecięcia  krzywych:
+$$
+x^2 = 4
+$$
+$$
+x = \pm 2
+$$
 
-Objętość bryły:
+Obszar jest więc ograniczony krzywymi $y = x^2$ i $y = 4$ oraz prostymi $x = -2$ i $x = 2$.
+
+Przy użyciu metody powłok cylindrycznych, objętość bryły obrotowej wyraża się wzorem:
 $$
-V = \pi \int_{-2}^2 (4 - x^2)^2\,dx = \pi \int_{-2}^2 (16 - 8x^2 + x^4)\,dx
+V = 2\pi \int y \cdot f(y) \, dy
 $$
 
-Z uwagi na parzystość funkcji podcałkowej:
+gdzie $f(y)$ oznacza odległość punktu krzywej od osi obrotu.
+
+W naszym przypadku, dla danego $y$, wartość $x$ wyraża się jako $x = \pm\sqrt{y}$ (ponieważ $y = x^2$).
+
+Objętość bryły to:
 $$
-V = 2\pi \int_0^2 (16 - 8x^2 + x^4)\,dx = 2\pi \left[16x - \frac{8x^3}{3} + \frac{x^5}{5}\right]_0^2 = 2\pi \left(32 - \frac{64}{3} + \frac{32}{5}\right) = 2\pi \cdot \frac{480 - 320 + 192}{60} = 2\pi \cdot \frac{352}{60} = \frac{352\pi}{30}
+V = 2\pi \int_{0}^{4} y \cdot (2\sqrt{y}) \, dy = 4\pi \int_{0}^{4} y^{3/2} \, dy = 4\pi \left[ \frac{2y^{5/2}}{5} \right]_{0}^{4}
 $$
+$$
+= 4\pi \cdot \frac{2}{5} \cdot (4^{5/2} - 0) = \frac{8\pi}{5} \cdot 4^{5/2} = \frac{8\pi}{5} \cdot 32 = \frac{256\pi}{5}
+$$
+
+Objętość bryły powstałej przez obrót obszaru ograniczonego krzywymi $y = x^2$ i $y = 4$ wokół osi OX wynosi $\frac{256\pi}{5}$ jednostek objętości.
 
 ### Zadanie 9: Całka podwójna
 
@@ -895,7 +928,28 @@ Oblicz $\iint_D xy\,dA$, gdzie $D$ jest obszarem ograniczonym krzywymi $y = x^2$
 Punkty przecięcia krzywych: $x^2 = x + 2 \implies x^2 - x - 2 = 0 \implies (x-2)(x+1) = 0 \implies x = 2$ lub $x = -1$
 
 $$
-\iint_D xy\,dA = \int_{-1}^2 \int_{x^2}^{x+2} xy\,dy\,dx = \int_{-1}^2 x \left[\frac{y^2}{2}\right]_{x^2}^{x+2}\,dx = \int_{-1}^2 x \cdot \frac{(x+2)^2 - (x^2)^2}{2}\,dx = \int_{-1}^2 \frac{x[(x+2)^2 - x^4]}{2}\,dx = \int_{-1}^2 \frac{x(x^2 + 4x + 4 - x^4)}{2}\,dx = \int_{-1}^2 \frac{-x^5 + x^3 + 4x^2 + 4x}{2}\,dx = \frac{1}{2}\left[-\frac{x^6}{6} + \frac{x^4}{4} + \frac{4x^3}{3} + 2x^2\right]_{-1}^2 = \frac{1}{2}\left[\left(-\frac{64}{6} + \frac{16}{4} + \frac{32}{3} + 8\right) - \left(-\frac{1}{6} + \frac{1}{4} - \frac{4}{3} + 2\right)\right]
+\iint_D xy\,dA = \int_{-1}^2 \int_{x^2}^{x+2} xy\,dy\,dx
+$$
+$$
+= \int_{-1}^2 x \left[\frac{y^2}{2}\right]_{x^2}^{x+2} \, dx
+$$
+$$
+= \int_{-1}^2 x \cdot \frac{(x+2)^2 - (x^2)^2}{2} \, dx
+$$
+$$
+= \int_{-1}^2 \frac{x[(x+2)^2 - x^4]}{2} \, dx
+$$
+$$
+= \int_{-1}^2 \frac{x(x^2 + 4x + 4 - x^4)}{2} \, dx
+$$
+$$
+= \int_{-1}^2 \frac{-x^5 + x^3 + 4x^2 + 4x}{2} \, dx
+$$
+$$
+= \frac{1}{2} \left[ -\frac{x^6}{6} + \frac{x^4}{4} + \frac{4x^3}{3} + 2x^2 \right]_{-1}^2
+$$
+$$
+= \frac{1}{2} \left[ \left( -\frac{64}{6} + \frac{16}{4} + \frac{32}{3} + 8 \right) - \left( -\frac{1}{6} + \frac{1}{4} - \frac{4}{3} + 2 \right) \right]
 $$
 
 Po obliczeniu:
@@ -921,7 +975,10 @@ Ponieważ $-2y \neq 2y$, pole nie jest potencjalne.
 
 Zastosujmy twierdzenie Greena:
 $$
-\oint_C (x^2 - y^2)\,dx + 2xy\,dy = \iint_D \left(\frac{\partial (2xy)}{\partial x} - \frac{\partial (x^2 - y^2)}{\partial y}\right)\,dA = \iint_D (2y - (-2y))\,dA = \iint_D 4y\,dA
+\oint_C (x^2 - y^2)\,dx + 2xy\,dy = \iint_D \left(\frac{\partial (2xy)}{\partial x} - \frac{\partial (x^2 - y^2)}{\partial y}\right)\,dA =
+$$
+$$
+\iint_D (2y - (-2y))\,dA = \iint_D 4y\,dA
 $$
 
 Obszar $D$ to koło jednostkowe. Ze względu na nieparzystość funkcji $4y$ względem $y$:

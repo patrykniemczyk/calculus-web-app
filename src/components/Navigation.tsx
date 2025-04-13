@@ -17,7 +17,7 @@ const Navigation = () => {
         <Link
           key={path}
           to={path}
-          className={`${isActiveLink(path) ? '!underline !decoration-2 !decoration-blue-400 !underline-offset-6' : ''} 
+          className={`${isActiveLink(path) ? '!underline decoration-2 !decoration-blue-400 underline-offset-6' : ''} 
                       hover:underline focus:underline`}
         >
           {label}

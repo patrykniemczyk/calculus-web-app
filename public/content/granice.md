@@ -498,7 +498,10 @@ $$
 **Rozwiązanie:**
 
 $$
-\lim_{x \to 0} \frac{\tan 2x}{3x} = \lim_{x \to 0} \frac{\sin 2x}{3x \cos 2x} = \lim_{x \to 0} \frac{2 \sin 2x}{6x} \cdot \frac{1}{\cos 2x} = \frac{2}{6} \lim_{x \to 0} \frac{\sin 2x}{2x} \cdot \lim_{x \to 0} \frac{1}{\cos 2x} = \frac{2}{6} \cdot 1 \cdot \frac{1}{\cos 0} = \frac{2}{6} \cdot 1 \cdot 1 = \frac{1}{3}
+\lim_{x \to 0} \frac{\tan 2x}{3x} = \lim_{x \to 0} \frac{\sin 2x}{3x \cos 2x} = \lim_{x \to 0} \frac{2 \sin 2x}{6x} \cdot \frac{1}{\cos 2x}
+$$
+$$
+= \frac{2}{6} \lim_{x \to 0} \frac{\sin 2x}{2x} \cdot \lim_{x \to 0} \frac{1}{\cos 2x} = \frac{2}{6} \cdot 1 \cdot \frac{1}{\cos 0} = \frac{2}{6} \cdot 1 \cdot 1 = \frac{1}{3}
 $$
 
 ### Zadanie 9
